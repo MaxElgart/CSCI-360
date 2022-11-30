@@ -1,0 +1,3 @@
+/Users/rosselgart/Desktop/CSCI360/project-3-MaxElgart/part_2/task1/CMakeFiles/task1.dir
+/Users/rosselgart/Desktop/CSCI360/project-3-MaxElgart/part_2/task1/CMakeFiles/edit_cache.dir
+/Users/rosselgart/Desktop/CSCI360/project-3-MaxElgart/part_2/task1/CMakeFiles/rebuild_cache.dir
