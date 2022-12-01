@@ -35,5 +35,5 @@
 5 20 18 Yes 0.963529
 5 20 19 Yes 0.963657
 
-2. The total expected profit if we play the game many times is: $331.593
-Therefore, I am willing to pay anything less than $331.593
+2. The total expected profit is: $251.454
+Therefore, I am willing to pay anything less than $251.454

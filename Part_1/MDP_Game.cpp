@@ -63,7 +63,7 @@ int main()
                         }
                         else
                         {
-                            no_hold += (1.0/6.0)*(probabilities[i][j][m + g]);
+                            no_hold += (1.0/6.0)*probabilities[i][j][m + g];
                         }
                     
                         if (j + m + g >= 40)
@@ -72,12 +72,12 @@ int main()
                         }
                         else
                         {
-                            hold += (1.0/6.0)*(probabilities[i - 1][j + m + g][0]);
+                            hold += (1.0/6.0)*probabilities[i - 1][j + m + g][0];
                         }
                     }
                 
-                    no_hold += (1.0/6.0)*(probabilities[i - 1][j][0]);
-                    hold += (1.0/6.0)*(probabilities[i - 1][j][0]);
+                    no_hold += (1.0/6.0)*probabilities[i - 1][j][0];
+                    hold += (1.0/6.0)*probabilities[i - 1][j][0];
                     if (m == 0 || i == 1)
                     {
                         probabilities[i][j][m] = no_hold;
@@ -98,7 +98,6 @@ int main()
     }
     
     std::ofstream First_File("output.txt");
-    double total_expected_win = 0;
     
     //Gets the output.txt with everything except for values with total + scratch >= 40
     for (int i = 0; i < 6; i++)
@@ -111,14 +110,9 @@ int main()
                 {
                     First_File << i << " " << j << " " << m << " " << action[i][j][m] << " " << probabilities[i][j][m] << std::endl;
                 }
-                // This is for getting the expected value for question2 of how much to pay to play
-                total_expected_win += 500*(probabilities[i][j][m]);
             }
         }
     }
-    
-    // This is for getting the expected value for question2 of how much to pay to play
-    total_expected_win = total_expected_win/(40*40*6);
     
     std::ofstream Second_File("part1.txt");
     // This is for outputtting the states to hold when total = 20 and scratch_score < 20 (AKA for question 1)
@@ -133,8 +127,11 @@ int main()
         }
     }
     
+    // This is for getting the expected value for question2 of how much to pay to play
+    double total_expected_win = 500*probabilities[5][0][0];
+    
     // Puts resulting expected value and how much we should pay to play (q2)
-    Second_File << std::endl << "2. The total expected profit if we play the game many times is: $" << total_expected_win << std::endl << "Therefore, I am willing to pay anything less than $" << total_expected_win;
+    Second_File << std::endl << "2. The total expected profit is: $" << total_expected_win << std::endl << "Therefore, I am willing to pay anything less than $" << total_expected_win;
     
     First_File.close();
     Second_File.close();
