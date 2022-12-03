@@ -131,7 +131,7 @@ int main()
     double total_expected_win = 500*probabilities[5][0][0];
     
     // Puts resulting expected value and how much we should pay to play (q2)
-    Second_File << std::endl << "2. The total expected profit is: $" << total_expected_win << std::endl << "Therefore, I am willing to pay anything less than $" << total_expected_win;
+    Second_File << std::endl << "2. The total expected profit is: $" << total_expected_win << " because we take the probability of winning at 5 0 0 (" << probabilities[5][0][0] << ") and multiply it by 500" << std::endl << "Therefore, I am willing to pay anything less than $" << total_expected_win;
     
     First_File.close();
     Second_File.close();

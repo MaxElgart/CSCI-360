@@ -35,5 +35,5 @@
 5 20 18 Yes 0.963529
 5 20 19 Yes 0.963657
 
-2. The total expected profit is: $251.454
+2. The total expected profit is: $251.454 because we take the probability of winning at 5 0 0 (0.502908) and multiply it by 500
 Therefore, I am willing to pay anything less than $251.454
