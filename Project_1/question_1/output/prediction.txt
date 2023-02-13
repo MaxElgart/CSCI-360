@@ -1,0 +1,8 @@
+Prediction for unlabeled example #0: yes
+Prediction for unlabeled example #1: no
+Prediction for unlabeled example #2: no
+Prediction for unlabeled example #3: yes
+Prediction for unlabeled example #4: yes
+Prediction for unlabeled example #5: yes
+Prediction for unlabeled example #6: no
+Prediction for unlabeled example #7: yes
