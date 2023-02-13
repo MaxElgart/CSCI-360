@@ -1,0 +1,3 @@
+1. If the learning rate was lowered to .01 then the ai would learn slower because it would go downhill at a slower rate. This means that it would take more iterations to find the local minimum, but it would most likely not miss it since it would be going downhill at such a slower rate.
+
+2. If we had a lot of epochs our model would overfit the training data. This means that the model will memorize this data and not be able to generalize it to fit the test data.
